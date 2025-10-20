@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Flooding & Climate Change - Rising Waters, Rising Action</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Floating Navigation -->
+    <div class="floating-nav" id="floatingNav">
+        <div class="nav-compass" id="navCompass">
+            <div class="compass-ring">
+                <div class="compass-needle"></div>
+                <div class="compass-center"></div>
+            </div>
+            <div class="nav-indicators">
+                <div class="indicator" data-section="hero"></div>
+                <div class="indicator" data-section="climate-impact"></div>
+                <div class="indicator" data-section="florida-impacts"></div>
+                <div class="indicator" data-section="solutions"></div>
+                <div class="indicator" data-section="resources"></div>
+            </div>
+        </div>
+        <div class="nav-panel" id="navPanel">
+            <div class="panel-content">
+                <h3>Navigate</h3>
+                <div class="nav-grid">
+                    <a href="#hero" class="nav-item" data-section="hero">
+                        <div class="nav-icon">🏠</div>
+                        <span>Home</span>
+                    </a>
+                    <a href="#climate-impact" class="nav-item" data-section="climate-impact">
+                        <div class="nav-icon">🌡️</div>
+                        <span>Climate</span>
+                    </a>
+                    <a href="#florida-impacts" class="nav-item" data-section="florida-impacts">
+                        <div class="nav-icon">🌴</div>
+                        <span>Florida</span>
+                    </a>
+                    <a href="#solutions" class="nav-item" data-section="solutions">
+                        <div class="nav-icon">💡</div>
+                        <span>Solutions</span>
+                    </a>
+                    <a href="#resources" class="nav-item" data-section="resources">
+                        <div class="nav-icon">📚</div>
+                        <span>Resources</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-indicator" id="progressIndicator">
+        <div class="progress-fill"></div>
+        <div class="progress-text">0%</div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🌊</div>
+                <span class="logo-text">Rising Waters</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#climate-impact" class="nav-link">Impact</a>
+                <a href="#florida-impacts" class="nav-link">Florida</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#resources" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1619388379684-87b0dfd8c2e6" alt="Flooding in Florida" class="hero-image">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="floating-elements">
+                <div class="floating-card card-1">
+                    <div class="card-content">
+                        <h4>3.2M</h4>
+                        <p>People at Risk</p>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-content">
+                        <h4>+8"</h4>
+                        <p>Sea Level Rise</p>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-content">
+                        <h4>40%</h4>
+                        <p>More Flooding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Rising Waters,</span>
+                    <span class="title-line">Rising Action</span>
+                </h1>
+                <p class="hero-subtitle">Understanding Florida's Flood Crisis and How We Can Adapt to Climate Change</p>
+                <div class="hero-actions">
+                    <button class="cta-button primary" onclick="scrollToSection('climate-impact')">
+                        <span>Explore the Impact</span>
+                        <div class="button-arrow">→</div>
+                    </button>
+                    <button class="cta-button secondary" onclick="scrollToSection('solutions')">
+                        <span>Take Action</span>
+                        <div class="button-arrow">→</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Impact Section -->
+    <section id="climate-impact" class="climate-impact">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Climate Change Affects Flooding</h2>
+                <p class="section-subtitle">Understanding the science behind rising waters and extreme weather patterns</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Ocean waves">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">🌡️</div>
+                        <h3>Warmer Oceans</h3>
+                        <p>Rising sea temperatures expand water volume and fuel stronger storms, leading to more frequent and severe flooding events across Florida's coastline.</p>
+                    </div>
+                </div>
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Sea level rise">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">🌊</div>
+                        <h3>Sea Level Rise</h3>
+                        <p>Global sea levels have risen 8 inches since 1900, with Florida experiencing some of the highest rates of increase, threatening coastal communities.</p>
+                    </div>
+                </div>
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Hurricane winds and palm trees">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">⛈️</div>
+                        <h3>Extreme Weather</h3>
+                        <p>Climate change intensifies hurricanes and creates more unpredictable weather patterns, increasing flood risks throughout the state.</p>
+                    </div>
+                </div>
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000" alt="Urban development">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">🏗️</div>
+                        <h3>Urban Development</h3>
+                        <p>Rapid development reduces natural drainage systems, making cities more vulnerable to flooding when storms hit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Florida Impacts Section -->
+    <section id="florida-impacts" class="florida-impacts">
+        <div class="florida-hero">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1549887534-5a37a0f51906" alt="Florida flooding aftermath" class="florida-hero-image">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title">Real Impacts in Florida</h2>
+                <p class="hero-subtitle">From Miami to Jacksonville, communities are already feeling the effects of climate change</p>
+            </div>
+        </div>
+        
+        <!-- Dramatic Flood Gallery -->
+        <div class="flood-gallery">
+            <div class="container">
+                <div class="gallery-header">
+                    <h3>The Reality of Flooding</h3>
+                    <p>These powerful images show the devastating impact of flooding across Florida</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1619388379684-87b0dfd8c2e6" alt="Flooded street with cars submerged at night">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h4>Submerged Streets</h4>
+                                    <p>Cars completely underwater during severe flooding events</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Lightning storm over landscape">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h4>Lightning Storms</h4>
+                                    <p>Extreme weather patterns intensifying due to climate change</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Palm trees in hurricane winds">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h4>Hurricane Winds</h4>
+                                    <p>Palm trees bent by extreme wind forces</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1549887534-5a37a0f51906" alt="Flooded city street with buildings">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h4>Urban Flooding</h4>
+                                    <p>City streets overwhelmed by rising floodwaters</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1570818884170-392ec7f4e1d3" alt="Neighborhood flooding">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h4>Neighborhood Impact</h4>
+                                    <p>Residential areas affected by rising waters</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="impacts-content">
+                <div class="impact-story">
+                    <div class="story-visual">
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1570818884170-392ec7f4e1d3" alt="Flooded neighborhood" class="story-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="story-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">300%</div>
+                                <div class="stat-label">Increase in flood events since 2000</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">$1.3B</div>
+                                <div class="stat-label">Annual flood damage costs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3>King Tides in Miami</h3>
+                        <p>Miami experiences "sunny day flooding" during king tides, where streets flood even without rain. This phenomenon is becoming more frequent and severe, affecting daily life and property values throughout South Florida.</p>
+                        <div class="story-features">
+                            <div class="feature">
+                                <div class="feature-icon">📍</div>
+                                <div class="feature-content">
+                                    <strong>Miami-Dade County:</strong> 2.7 million people at risk from sea level rise
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🏠</div>
+                                <div class="feature-content">
+                                    <strong>Property Values:</strong> $15-23 billion in property at risk by 2030
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🚗</div>
+                                <div class="feature-content">
+                                    <strong>Infrastructure:</strong> Roads, bridges, and utilities increasingly vulnerable
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How We Can Help</h2>
+                <p class="section-subtitle">Individual and community actions that make a real difference</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">🏘️</div>
+                        <h3>Community Action</h3>
+                    </div>
+                    <div class="category-content">
+                        <ul class="action-list">
+                            <li>Join local flood prevention groups</li>
+                            <li>Support green infrastructure projects</li>
+                            <li>Participate in community planning meetings</li>
+                            <li>Volunteer for beach cleanups and restoration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">🏠</div>
+                        <h3>Personal Preparation</h3>
+                    </div>
+                    <div class="category-content">
+                        <ul class="action-list">
+                            <li>Elevate electrical systems and appliances</li>
+                            <li>Install flood barriers and sump pumps</li>
+                            <li>Purchase flood insurance</li>
+                            <li>Create emergency evacuation plans</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">🌱</div>
+                        <h3>Environmental Solutions</h3>
+                    </div>
+                    <div class="category-content">
+                        <ul class="action-list">
+                            <li>Plant native vegetation for natural drainage</li>
+                            <li>Reduce water usage and runoff</li>
+                            <li>Support renewable energy initiatives</li>
+                            <li>Advocate for climate-friendly policies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="solution-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <div class="category-icon">💡</div>
+                        <h3>Technology & Innovation</h3>
+                    </div>
+                    <div class="category-content">
+                        <ul class="action-list">
+                            <li>Use flood monitoring apps and alerts</li>
+                            <li>Support smart city flood management</li>
+                            <li>Invest in climate adaptation technology</li>
+                            <li>Share data and research findings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="action-callout">
+                <div class="callout-content">
+                    <h3>Ready to Take Action?</h3>
+                    <p>Start small, think big. Every action counts in building a more resilient Florida.</p>
+                    <button class="action-button" onclick="scrollToSection('resources')">
+                        <span>Get Started</span>
+                        <div class="button-arrow">→</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resources & Emergency Links</h2>
+                <p class="section-subtitle">Stay informed and prepared with these essential resources</p>
+            </div>
+            <div class="resources-grid">
+                <div class="resource-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">🚨</div>
+                        <h3>Emergency Resources</h3>
+                    </div>
+                    <div class="resource-links">
+                        <a href="https://www.floridadisaster.org/" target="_blank" class="resource-link">
+                            <div class="link-icon">🏛️</div>
+                            <div class="link-content">
+                                <strong>Florida Division of Emergency Management</strong>
+                                <span>Official emergency information and alerts</span>
+                            </div>
+                        </a>
+                        <a href="https://www.weather.gov/" target="_blank" class="resource-link">
+                            <div class="link-icon">🌤️</div>
+                            <div class="link-content">
+                                <strong>National Weather Service</strong>
+                                <span>Weather forecasts and flood warnings</span>
+                            </div>
+                        </a>
+                        <a href="https://www.fema.gov/" target="_blank" class="resource-link">
+                            <div class="link-icon">🆘</div>
+                            <div class="link-content">
+                                <strong>FEMA</strong>
+                                <span>Disaster assistance and preparedness</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">📚</div>
+                        <h3>Learning & Research</h3>
+                    </div>
+                    <div class="resource-links">
+                        <a href="https://sealevelrise.org/" target="_blank" class="resource-link">
+                            <div class="link-icon">📊</div>
+                            <div class="link-content">
+                                <strong>Sea Level Rise Viewer</strong>
+                                <span>Interactive maps and projections</span>
+                            </div>
+                        </a>
+                        <a href="https://www.epa.gov/climate-change" target="_blank" class="resource-link">
+                            <div class="link-icon">🌍</div>
+                            <div class="link-content">
+                                <strong>EPA Climate Change</strong>
+                                <span>Scientific data and research</span>
+                            </div>
+                        </a>
+                        <a href="https://www.floridaclimate.org/" target="_blank" class="resource-link">
+                            <div class="link-icon">🌴</div>
+                            <div class="link-content">
+                                <strong>Florida Climate Institute</strong>
+                                <span>Local research and solutions</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">🤝</div>
+                        <h3>Get Involved</h3>
+                    </div>
+                    <div class="resource-links">
+                        <a href="https://www.surfrider.org/" target="_blank" class="resource-link">
+                            <div class="link-icon">🏄</div>
+                            <div class="link-content">
+                                <strong>Surfrider Foundation</strong>
+                                <span>Coastal protection and advocacy</span>
+                            </div>
+                        </a>
+                        <a href="https://www.nature.org/" target="_blank" class="resource-link">
+                            <div class="link-icon">🌿</div>
+                            <div class="link-content">
+                                <strong>The Nature Conservancy</strong>
+                                <span>Environmental conservation</span>
+                            </div>
+                        </a>
+                        <a href="https://www.audubon.org/" target="_blank" class="resource-link">
+                            <div class="link-icon">🦅</div>
+                            <div class="link-content">
+                                <strong>Audubon Society</strong>
+                                <span>Wildlife and habitat protection</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🌊</div>
+                        <span class="logo-text">Rising Waters</span>
+                    </div>
+                    <p>Raising awareness about Florida's flood crisis and empowering communities to take action against climate change.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <span>🐦</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <span>📘</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <span>💼</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#climate-impact">Climate Impact</a></li>
+                        <li><a href="#florida-impacts">Florida Impacts</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Get in touch to learn more about climate action in Florida.</p>
+                    <div class="contact-info">
+                        <p>📧 info@risingwaters.org</p>
+                        <p>📞 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rising Waters. Built with ❤️ for Florida's future.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Built by <strong>Jaskaran Singh</strong> and <strong>Kwaneezy</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
