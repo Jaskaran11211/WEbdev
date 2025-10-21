@@ -10,58 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 3D Floating Navigation -->
-    <div class="floating-nav" id="floatingNav">
-        <div class="nav-compass" id="navCompass">
-            <div class="compass-ring">
-                <div class="compass-needle"></div>
-                <div class="compass-center"></div>
-            </div>
-            <div class="nav-indicators">
-                <div class="indicator" data-section="hero"></div>
-                <div class="indicator" data-section="climate-impact"></div>
-                <div class="indicator" data-section="florida-impacts"></div>
-                <div class="indicator" data-section="solutions"></div>
-                <div class="indicator" data-section="resources"></div>
-            </div>
-        </div>
-        <div class="nav-panel" id="navPanel">
-            <div class="panel-content">
-                <h3>Navigate</h3>
-                <div class="nav-grid">
-                    <a href="#hero" class="nav-item" data-section="hero">
-                        <div class="nav-icon">🏠</div>
-                        <span>Home</span>
-                    </a>
-                    <a href="#climate-impact" class="nav-item" data-section="climate-impact">
-                        <div class="nav-icon">🌡️</div>
-                        <span>Climate</span>
-                    </a>
-                    <a href="#florida-impacts" class="nav-item" data-section="florida-impacts">
-                        <div class="nav-icon">🌴</div>
-                        <span>Florida</span>
-                    </a>
-                    <a href="#solutions" class="nav-item" data-section="solutions">
-                        <div class="nav-icon">💡</div>
-                        <span>Solutions</span>
-                    </a>
-                    <a href="#resources" class="nav-item" data-section="resources">
-                        <div class="nav-icon">📚</div>
-                        <span>Resources</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Progress Indicator -->
-    <div class="progress-indicator" id="progressIndicator">
-        <div class="progress-fill"></div>
-        <div class="progress-text">0%</div>
-    </div>
-
     <!-- Main Navigation -->
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav">
         <div class="nav-container">
             <div class="nav-logo">
                 <div class="logo-icon">🌊</div>
@@ -113,14 +63,14 @@
                 </h1>
                 <p class="hero-subtitle">Understanding Florida's Flood Crisis and How We Can Adapt to Climate Change</p>
                 <div class="hero-actions">
-                    <button class="cta-button primary" onclick="scrollToSection('climate-impact')">
+                    <a href="#climate-impact" class="cta-button primary">
                         <span>Explore the Impact</span>
                         <div class="button-arrow">→</div>
-                    </button>
-                    <button class="cta-button secondary" onclick="scrollToSection('solutions')">
+                    </a>
+                    <a href="#solutions" class="cta-button secondary">
                         <span>Take Action</span>
                         <div class="button-arrow">→</div>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -137,7 +87,7 @@
                 <p class="section-subtitle">Understanding the science behind rising waters and extreme weather patterns</p>
             </div>
             <div class="impact-grid">
-                <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="impact-card">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Ocean waves">
                     </div>
@@ -147,7 +97,7 @@
                         <p>Rising sea temperatures expand water volume and fuel stronger storms, leading to more frequent and severe flooding events across Florida's coastline.</p>
                     </div>
                 </div>
-                <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="impact-card">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Sea level rise">
                     </div>
@@ -157,7 +107,7 @@
                         <p>Global sea levels have risen 8 inches since 1900, with Florida experiencing some of the highest rates of increase, threatening coastal communities.</p>
                     </div>
                 </div>
-                <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="impact-card">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Hurricane winds and palm trees">
                     </div>
@@ -167,7 +117,7 @@
                         <p>Climate change intensifies hurricanes and creates more unpredictable weather patterns, increasing flood risks throughout the state.</p>
                     </div>
                 </div>
-                <div class="impact-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="impact-card">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000" alt="Urban development">
                     </div>
@@ -319,7 +269,7 @@
                 <p class="section-subtitle">Individual and community actions that make a real difference</p>
             </div>
             <div class="solutions-grid">
-                <div class="solution-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="solution-category">
                     <div class="category-header">
                         <div class="category-icon">🏘️</div>
                         <h3>Community Action</h3>
@@ -333,7 +283,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="solution-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="solution-category">
                     <div class="category-header">
                         <div class="category-icon">🏠</div>
                         <h3>Personal Preparation</h3>
@@ -347,7 +297,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="solution-category" data-aos="fade-up" data-aos-delay="300">
+                <div class="solution-category">
                     <div class="category-header">
                         <div class="category-icon">🌱</div>
                         <h3>Environmental Solutions</h3>
@@ -361,7 +311,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="solution-category" data-aos="fade-up" data-aos-delay="400">
+                <div class="solution-category">
                     <div class="category-header">
                         <div class="category-icon">💡</div>
                         <h3>Technology & Innovation</h3>
@@ -380,10 +330,10 @@
                 <div class="callout-content">
                     <h3>Ready to Take Action?</h3>
                     <p>Start small, think big. Every action counts in building a more resilient Florida.</p>
-                    <button class="action-button" onclick="scrollToSection('resources')">
+                    <a href="#resources" class="action-button">
                         <span>Get Started</span>
                         <div class="button-arrow">→</div>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -397,7 +347,7 @@
                 <p class="section-subtitle">Stay informed and prepared with these essential resources</p>
             </div>
             <div class="resources-grid">
-                <div class="resource-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="resource-category">
                     <div class="category-header">
                         <div class="category-icon">🚨</div>
                         <h3>Emergency Resources</h3>
@@ -426,7 +376,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="resource-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="resource-category">
                     <div class="category-header">
                         <div class="category-icon">📚</div>
                         <h3>Learning & Research</h3>
@@ -455,7 +405,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="resource-category" data-aos="fade-up" data-aos-delay="300">
+                <div class="resource-category">
                     <div class="category-header">
                         <div class="category-icon">🤝</div>
                         <h3>Get Involved</h3>
@@ -544,7 +494,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
