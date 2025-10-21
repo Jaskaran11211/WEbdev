@@ -219,7 +219,11 @@ body {
 
 .hero-content {
     text-align: center;
+<<<<<<< HEAD
     color: var(--primary-orange);
+=======
+    color: var(--cream-white);
+>>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
     max-width: 1000px;
     padding: 0 20px;
     z-index: 3;
@@ -261,7 +265,10 @@ body {
     margin-bottom: 50px;
     opacity: 0.95;
     font-weight: 300;
+<<<<<<< HEAD
     color: var(--primary-orange);
+=======
+>>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out 0.6s both;
 }
@@ -450,6 +457,7 @@ body {
     font-size: 1.1rem;
 }
 
+<<<<<<< HEAD
 /* Flood Photos Gallery Section */
 .flood-photos {
     padding: 120px 0;
@@ -557,6 +565,8 @@ body {
     line-height: 1.4;
 }
 
+=======
+>>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
 /* Florida Impacts Section */
 .florida-impacts {
     padding: 0;
@@ -1210,6 +1220,7 @@ body {
     color: var(--accent-coral);
 }
 
+<<<<<<< HEAD
 /* Quote Section */
 .quote-section {
     padding: 60px 0;
@@ -1292,6 +1303,8 @@ body {
     opacity: 0.8;
 }
 
+=======
+>>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
 /* Credits */
 .credits {
     text-align: center;
@@ -1364,6 +1377,7 @@ body {
         grid-row: span 1;
     }
     
+<<<<<<< HEAD
     .flood-grid {
         grid-template-columns: 1fr 1fr;
         gap: 15px;
@@ -1374,6 +1388,8 @@ body {
         grid-row: span 1;
     }
     
+=======
+>>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
     .footer-bottom {
         flex-direction: column;
         text-align: center;
@@ -1427,6 +1443,7 @@ body {
         grid-row: span 1;
     }
     
+<<<<<<< HEAD
     .flood-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -1456,6 +1473,11 @@ body {
     .quote-text::after {
         font-size: 2rem;
     }
+=======
+    .gallery-header h3 {
+        font-size: 2rem;
+    }
+>>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
 }
 
 /* Focus styles for accessibility */
