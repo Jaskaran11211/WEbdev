@@ -219,11 +219,7 @@ body {
 
 .hero-content {
     text-align: center;
-<<<<<<< HEAD
     color: var(--primary-orange);
-=======
-    color: var(--cream-white);
->>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
     max-width: 1000px;
     padding: 0 20px;
     z-index: 3;
@@ -265,10 +261,7 @@ body {
     margin-bottom: 50px;
     opacity: 0.95;
     font-weight: 300;
-<<<<<<< HEAD
     color: var(--primary-orange);
-=======
->>>>>>> 81dca26b21a6ba26f0578412c48be2a5b67496f7
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out 0.6s both;
 }
